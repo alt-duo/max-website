@@ -646,8 +646,12 @@ video {
   margin-top: 1rem;
 }
 
-.mb-auto {
-  margin-bottom: auto;
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 
 .block {
@@ -690,8 +694,12 @@ video {
   height: 100vh;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-1\/2 {
+  height: 50%;
 }
 
 .w-1\/2 {
@@ -722,8 +730,8 @@ video {
   width: 100%;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.w-1 {
+  width: 0.25rem;
 }
 
 .max-w-md {
@@ -839,6 +847,10 @@ video {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-clip-text {
