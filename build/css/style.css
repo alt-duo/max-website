@@ -646,6 +646,10 @@ video {
   margin-top: 1rem;
 }
 
+.mb-auto {
+  margin-bottom: auto;
+}
+
 .block {
   display: block;
 }
@@ -686,6 +690,10 @@ video {
   height: 100vh;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -720,6 +728,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .translate-x-\[-100\%\] {

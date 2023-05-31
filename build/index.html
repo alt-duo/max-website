@@ -16,8 +16,8 @@
 
 <body>
     
-<div class="h-screen bg-main3">
-<header>
+<div class="flex flex-col h-screen justify-between ">
+<header class="bg-main3">
     
 <div class="relative z-20 border-b bg-main rounded-md">
     
@@ -66,89 +66,89 @@
 </div>
 </div>
 </div>
-
+<style>
+  .marquee {
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .marquee span {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+  color: #FFFFFF;
+    left: 100%;
+  
+    animation: marquee 10.0s linear infinite;
+  }
+  .marquee:hover span {
+    animation-play-state: paused;
+  }
+  
+  .marquee span:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .marquee span:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  .marquee span:nth-child(3) {
+    animation-delay: 0.8s;
+  }
+  .marquee span:nth-child(4) {
+    animation-delay: 1.2s;
+  }
+  .marquee span:nth-child(5) {
+    animation-delay: 1.6s;
+  }
+  .marquee span:nth-child(6) {
+    animation-delay: 2.0s;
+  }
+  .marquee span:nth-child(7) {
+    animation-delay: 2.4s;
+  }
+  .marquee span:nth-child(8) {
+    animation-delay: 2.6s;
+  }
+  .marquee span:nth-child(9) {
+    animation-delay: 2.8s;
+  }
+  .marquee span:nth-child(10) {
+    animation-delay: 3.2s;
+  }
+  .marquee span:nth-child(11) {
+    animation-delay: 3.6s;
+  }
+  .marquee span:nth-child(12) {
+    animation-delay: 4.0s;
+  }
+  
+  
+  @keyframes marquee {
+    0%   { left: 100%; }
+    100% { left: -100%; }
+  }
+  </style>
+  <p class="marquee">
+    <span>max yang</span>
+    <span> | </span>
+    <span>max yang</span>
+    <span> | </span>
+  <span>max yang</span>
+    <span> | </span>
+    <span>max yang</span>
+    <span> | </span>
+  <span>max yang</span>
+    <span> | </span>
+    <span>max yang</span>
+    <span> | </span>
+  
+  </p>
 
 </header>
-<style>
-    .marquee {
-      width: 500px;
-      margin: 0 auto;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    .marquee span {
-      display: inline-block;
-      font-size: 20px;
-      position: relative;
-    color: #FFFFFF;
-      left: 100%;
+
     
-      animation: marquee 10.0s linear infinite;
-    }
-    .marquee:hover span {
-      animation-play-state: paused;
-    }
-    
-    .marquee span:nth-child(1) {
-      animation-delay: 0s;
-    }
-    .marquee span:nth-child(2) {
-      animation-delay: 0.4s;
-    }
-    .marquee span:nth-child(3) {
-      animation-delay: 0.8s;
-    }
-    .marquee span:nth-child(4) {
-      animation-delay: 1.2s;
-    }
-    .marquee span:nth-child(5) {
-      animation-delay: 1.6s;
-    }
-    .marquee span:nth-child(6) {
-      animation-delay: 2.0s;
-    }
-    .marquee span:nth-child(7) {
-      animation-delay: 2.4s;
-    }
-    .marquee span:nth-child(8) {
-      animation-delay: 2.6s;
-    }
-    .marquee span:nth-child(9) {
-      animation-delay: 2.8s;
-    }
-    .marquee span:nth-child(10) {
-      animation-delay: 3.2s;
-    }
-    .marquee span:nth-child(11) {
-      animation-delay: 3.6s;
-    }
-    .marquee span:nth-child(12) {
-      animation-delay: 4.0s;
-    }
-    
-    
-    @keyframes marquee {
-      0%   { left: 100%; }
-      100% { left: -100%; }
-    }
-    </style>
-    <p class="marquee">
-      <span>max yang</span>
-      <span> | </span>
-      <span>max yang</span>
-      <span> | </span>
-    <span>max yang</span>
-      <span> | </span>
-      <span>max yang</span>
-      <span> | </span>
-    <span>max yang</span>
-      <span> | </span>
-      <span>max yang</span>
-      <span> | </span>
-    
-    </p>
-    
-<main class="mx-auto max-w-4xl ">
+<main class="flex-grow">
     <section
       id="hero"
       class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
@@ -258,8 +258,9 @@
     </section>
     
 </div>
+</main>
 
-<footer class="bg-white dark:bg-gray-900">
+<footer class="bg-white>
   <div class="container px-6 py-8 mx-auto">
       <div class="flex flex-col items-center text-center">
           <a href="#">
@@ -296,7 +297,7 @@
       </div>
   </div>
 </footer>
-
+</div>
 </body>
 
 </html>
